@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="grade">
+      <marquee
+        behavior="scroll"
+        direction="left"
+        style="color: purple; font-size: 20px"
+      >
+        Grading System!!!!!🥰🎉🎊🎊😍😍 Grading System!!!!!🥰🎉🎊🎊😍😍 Grading
+        System!!!!!🥰🎉🎊🎊😍😍 Grading System!!!!!🥰🎉🎊🎊😍😍</marquee
+      >
+      <input type="number" placeholder="Input Your Score" id="userInput" />
+      <button onclick="checkScore()">Check</button>
+      <div
+        id="showResult"
+        style="
+          font-size: 25px;
+          text-align: center;
+          padding-top: 30px;
+          color: purple;
+        "
+      ></div>
+    </div>
+
+    <script>
+
+      let musicState = false;
+      var stand = new Audio("stand.mp3");
+      var buga = new Audio("buga.mp3");
+      var good = new Audio("good.mp3");
+      var fair = new Audio("fair.mp3");   
+      var poor = new Audio("poor.mp3");
+      var wrong = new Audio("wrong.mp3");
+      function checkScore() {
+
+        if(musicState === true){
+          wrong.pause();
+          stand.pause();
+          buga.pause();
+          good.pause();
+          poor.pause();
+          fair.pause();
+        }
+
+        if (userInput.value >= 0 && userInput.value <= 30) {
+          showResult.innerHTML = "F-FAIL 💔";
+          wrong.play();
+          musicState = true;
+        } else if (userInput.value >= 31 && userInput.value <= 40) {
+          showResult.innerHTML = "E-POOR 😓"
+          poor.play();
+          musicState = true;
+        } else if (userInput.value >= 41 && userInput.value <= 50) {
+          showResult.innerHTML = "D-FAIR 😔"
+          fair.play();
+          musicState = true;
+        } else if (userInput.value >= 51 && userInput.value <= 60) {
+          showResult.innerHTML = "C- Average 🙁"
+          good.play();
+          musicState = true;
+        } else if (userInput.value >= 61 && userInput.value <= 75) {
+          showResult.innerHTML = "B-GOOD 😊"
+          buga.play();
+          musicState = true;
+        } else if (userInput.value >= 76 && userInput.value <= 100) {
+          showResult.innerHTML = "A-EXCELLENT 😍"
+          stand.play();
+          musicState = true;
+        } else {
+          showResult.innerHTML = "INVALID";
+          musicState = true;
+        }
+      }
+    </script>
+  </body>
+</html>
