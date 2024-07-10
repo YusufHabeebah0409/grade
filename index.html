@@ -10,7 +10,7 @@
     <marquee
       behavior="scroll"
       direction="left"
-      style="color: rgb(235, 163, 76); font-size: 30px; font-weight: bolder;"
+      style="color: aliceblue; font-size: 30px; font-weight: bolder"
     >
       Grading System!!!!!🥰🎉🎊🎊😍😍 Grading System!!!!!🥰🎉🎊🎊😍😍 Grading
       System!!!!!🥰🎉🎊🎊😍😍 Grading System!!!!!🥰🎉🎊🎊😍😍</marquee
@@ -24,7 +24,7 @@
           font-size: 60px;
           text-align: center;
           padding-top: 50px;
-          color: purple;
+          color: rgba(252, 250, 252, 0.979);
         "
       ></div>
     </div>
@@ -46,8 +46,9 @@
           poor.pause();
           fair.pause();
         }
-
-        if (userInput.value >= 0 && userInput.value <= 30) {
+        if (userInput.value == "") {
+          showResult.innerHTML = "Please Enter a number.";
+        } else if (userInput.value >= 0 && userInput.value <= 30) {
           showResult.innerHTML = "F-FAIL 💔";
           wrong.play();
           musicState = true;

@@ -5,8 +5,10 @@
 }
 
 body {  
-   background: linear-gradient(to bottom left,rgba(48, 2, 48, 0.801),rgb(87, 5, 87),rgb(128, 9, 128), purple, rgb(167, 8, 167) ,rgb(170, 4, 170), rgb(211, 10, 211),rgb(199, 91, 199),rgb(163, 103, 163));
-   
+   background: linear-gradient(to bottom left,rgba(48, 2, 48, 0.801),rgb(87, 5, 87),rgb(128, 9, 128), purple, rgba(255, 107, 255, 0.562) ,rgb(170, 4, 170), rgb(211, 10, 211),rgb(199, 91, 199),rgb(163, 103, 163));
+   background-repeat: no-repeat;
+   height: 100vh;
+   padding-top: 30px;
 }
 
 .grade {
@@ -14,11 +16,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 180px auto;
+    margin: 100px auto;
     padding: 30px;
-    border: 1px solid black;
     width: 470px;
-    height: 250px;
+    height: 370px;
     border-radius: 20px;
 }
 
@@ -58,7 +59,7 @@ button {
         background: linear-gradient(to bottom left,rgba(48, 2, 48, 0.801),rgb(87, 5, 87),rgb(128, 9, 128), purple, rgb(167, 8, 167) ,rgb(170, 4, 170), rgb(211, 10, 211),rgb(199, 91, 199),rgb(163, 103, 163));
        background-repeat: no-repeat;
        height: 100vh;
-       padding-top: 70px;
+       padding-top: 50px;
     }
 
     .grade {
@@ -67,7 +68,7 @@ button {
         background-size: cover;
         background-position: center;
         margin: 100px auto;
-        padding-top: 30px;
+        padding-top: 40px;
         width: 390px;
         height: 450px;
         border-radius: 20px;
