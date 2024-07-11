@@ -67,9 +67,9 @@ button {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        margin: 100px auto;
+        margin: 80px auto;
         padding-top: 40px;
-        width: 390px;
+        width: 350px;
         height: 450px;
         border-radius: 20px;
         box-shadow: 3px 3px 3px;
@@ -83,7 +83,7 @@ button {
         border: none;
         box-shadow: 3px 3px 3px;
         border-radius: 15px;
-        width: 220px;
+        width: 185px;
         height: 60px;
         color: rgb(118, 14, 118);
         text-align: center;
